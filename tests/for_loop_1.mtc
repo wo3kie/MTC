@@ -1,0 +1,47 @@
+int simple_for( int start ){
+    int sum = 0;
+
+    for( int current = start ; current < 2 *  start ; current = current + 1 ){
+        sum = sum + current;
+    }
+
+    return sum;
+}
+
+int breaked_for( int end ){
+   int sum = 0;
+
+    for( int current = 0 ; current < 255 ; current = current + 1 ){
+        if( current == end ){
+            break;
+        }
+
+        sum = sum + 1;
+    }
+
+    return sum;
+}
+
+int for_continue( int omit, int end ){
+    int sum = 0;
+
+    for( int current = 0 ; current < end ; current = current + 1 ){
+        if( current == omit )
+            continue;
+
+        sum = sum + current;
+    }
+
+    return sum;
+}
+
+int main(){
+    int i = 10;
+
+if( simple_for( 10 ) != 145 ) return 1;
+if( breaked_for( i ) != i ) return 2;
+if( for_continue( 3, 5 ) != 7 ) return 3; 
+
+    return 0;
+}
+

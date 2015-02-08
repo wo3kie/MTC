@@ -1,0 +1,18 @@
+int factorial_recursive( int _value ){
+    if( _value == 0 ) return 1;
+    else return _value * factorial_recursive( _value - 1 );
+}
+
+int factorial_for( int _value ){
+    int result = 1;
+
+    for( int start = 1 ; start < _value + 1; start = start + 1 ){
+        result = result * start;
+    }
+
+    return result;
+}
+
+int main(){
+    return factorial_recursive( 4 ) - factorial_for( 4 );
+}

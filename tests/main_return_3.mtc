@@ -1,0 +1,16 @@
+int return0(){ return 0; }
+
+int return1(){ return 1;}
+
+int return2(){ return 2;}
+
+int main(){
+    if( 1 == 2 ){
+        return return1();
+    }
+    else if( 1 == 1 ){
+        return return0();
+    }
+
+    return return2();
+}

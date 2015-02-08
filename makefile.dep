@@ -1,0 +1,566 @@
+main.o: main.cpp headers/ph.hpp headers/application.hpp \
+  headers/semantic_value_stack.hpp headers/assignment_expression.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/break_instruction.hpp \
+  headers/compound_instruction.hpp headers/instructions_list.hpp \
+  headers/syntax_tree_list.hpp headers/continue_instruction.hpp \
+  headers/declaration.hpp headers/variables_controller.hpp \
+  headers/variable_data.hpp headers/dereference.hpp headers/unit.hpp \
+  headers/code_generator.hpp headers/do_while_instruction.hpp \
+  headers/instance_counter.hpp headers/expression.hpp \
+  headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/loop_instruction.hpp \
+  headers/function.hpp headers/functions_controller.hpp \
+  headers/function_data.hpp headers/parameters_list.hpp \
+  headers/function_call.hpp headers/functions_list.hpp \
+  headers/get_address.hpp headers/variable.hpp headers/if_instruction.hpp \
+  headers/null.hpp headers/number.hpp headers/parameter.hpp \
+  headers/parenthesis.hpp headers/program.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/unary_factor.hpp \
+  headers/while_instruction.hpp headers/scanner.hpp headers/parser.hpp \
+  headers/semantic_value_stack.hpp headers/scanner.hpp \
+  headers/bison_parser.hpp
+application.o: application.cpp headers/ph.hpp headers/application.hpp \
+  headers/semantic_value_stack.hpp headers/assignment_expression.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/break_instruction.hpp \
+  headers/compound_instruction.hpp headers/instructions_list.hpp \
+  headers/syntax_tree_list.hpp headers/continue_instruction.hpp \
+  headers/declaration.hpp headers/variables_controller.hpp \
+  headers/variable_data.hpp headers/dereference.hpp headers/unit.hpp \
+  headers/code_generator.hpp headers/do_while_instruction.hpp \
+  headers/instance_counter.hpp headers/expression.hpp \
+  headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/loop_instruction.hpp \
+  headers/function.hpp headers/functions_controller.hpp \
+  headers/function_data.hpp headers/parameters_list.hpp \
+  headers/function_call.hpp headers/functions_list.hpp \
+  headers/get_address.hpp headers/variable.hpp headers/if_instruction.hpp \
+  headers/null.hpp headers/number.hpp headers/parameter.hpp \
+  headers/parenthesis.hpp headers/program.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/unary_factor.hpp \
+  headers/while_instruction.hpp headers/scanner.hpp headers/parser.hpp \
+  headers/semantic_value_stack.hpp headers/scanner.hpp \
+  headers/bison_parser.hpp headers/code_generating_visitor.hpp \
+  headers/functions_controller.hpp headers/strings_controller.hpp \
+  headers/types_controller.hpp headers/variables_controller.hpp \
+  headers/code_generator.hpp headers/assignment_expression.hpp \
+  headers/break_instruction.hpp headers/compound_instruction.hpp \
+  headers/continue_instruction.hpp headers/declaration.hpp \
+  headers/dereference.hpp headers/do_while_instruction.hpp \
+  headers/expression.hpp headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/function.hpp \
+  headers/function_call.hpp headers/functions_list.hpp \
+  headers/get_address.hpp headers/if_instruction.hpp \
+  headers/instructions_list.hpp headers/null.hpp headers/number.hpp \
+  headers/operators.hpp headers/types_mapping.hpp \
+  headers/parameters_list.hpp headers/parenthesis.hpp headers/program.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/unary_factor.hpp headers/unit.hpp \
+  headers/variable.hpp headers/while_instruction.hpp \
+  headers/code_generator.hpp headers/semantic_analysis_visitor.hpp \
+  headers/errors_detector.hpp headers/operators.hpp \
+  headers/semantic_analysis_exceptions.hpp headers/scope.hpp \
+  headers/parameter.hpp headers/type.hpp \
+  headers/symbols_controller_factory.hpp headers/type_data.hpp
+assignment_expression.o: assignment_expression.cpp headers/ph.hpp \
+  headers/assignment_expression.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp headers/factor.hpp \
+  headers/syntax_tree_node.hpp headers/unary_factor.hpp \
+  headers/simple_expression.hpp headers/expression.hpp headers/unit.hpp \
+  headers/code_generator.hpp headers/variable.hpp headers/unit.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp
+bison_parser.o: bison_parser.cpp headers/ph.hpp \
+  headers/semantic_value_stack.hpp headers/assignment_expression.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/break_instruction.hpp \
+  headers/compound_instruction.hpp headers/instructions_list.hpp \
+  headers/syntax_tree_list.hpp headers/continue_instruction.hpp \
+  headers/declaration.hpp headers/variables_controller.hpp \
+  headers/variable_data.hpp headers/dereference.hpp headers/unit.hpp \
+  headers/code_generator.hpp headers/do_while_instruction.hpp \
+  headers/instance_counter.hpp headers/expression.hpp \
+  headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/loop_instruction.hpp \
+  headers/function.hpp headers/declaration.hpp \
+  headers/functions_controller.hpp headers/function_data.hpp \
+  headers/parameters_list.hpp headers/function_call.hpp \
+  headers/expressions_list.hpp headers/functions_list.hpp \
+  headers/get_address.hpp headers/variable.hpp headers/if_instruction.hpp \
+  headers/instruction.hpp headers/instructions_list.hpp headers/null.hpp \
+  headers/number.hpp headers/parameter.hpp headers/parameters_list.hpp \
+  headers/parenthesis.hpp headers/program.hpp headers/functions_list.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/unary_factor.hpp headers/unit.hpp \
+  headers/variable.hpp headers/while_instruction.hpp \
+  headers/operators.hpp headers/syntax_tree_node.hpp \
+  headers/types_mapping.hpp headers/scanner.hpp
+code_generating_visitor.o: code_generating_visitor.cpp headers/ph.hpp \
+  headers/code_generating_visitor.hpp headers/functions_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/function_data.hpp \
+  headers/symbol_data.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/type_data.hpp \
+  headers/strings_controller.hpp headers/string_data.hpp \
+  headers/types_controller.hpp headers/variables_controller.hpp \
+  headers/variable_data.hpp headers/code_generator.hpp \
+  headers/assignment_expression.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/break_instruction.hpp \
+  headers/compound_instruction.hpp headers/instructions_list.hpp \
+  headers/syntax_tree_list.hpp headers/continue_instruction.hpp \
+  headers/declaration.hpp headers/variables_controller.hpp \
+  headers/dereference.hpp headers/unit.hpp headers/code_generator.hpp \
+  headers/do_while_instruction.hpp headers/instance_counter.hpp \
+  headers/expression.hpp headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/loop_instruction.hpp \
+  headers/function.hpp headers/declaration.hpp \
+  headers/functions_controller.hpp headers/parameters_list.hpp \
+  headers/function_call.hpp headers/expressions_list.hpp \
+  headers/functions_list.hpp headers/get_address.hpp headers/variable.hpp \
+  headers/if_instruction.hpp headers/instructions_list.hpp \
+  headers/null.hpp headers/number.hpp headers/operators.hpp \
+  headers/types_mapping.hpp headers/parameters_list.hpp \
+  headers/parenthesis.hpp headers/program.hpp headers/functions_list.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/strings_controller.hpp \
+  headers/unary_factor.hpp headers/unit.hpp headers/variable.hpp \
+  headers/while_instruction.hpp headers/function_data.hpp \
+  headers/precondition.hpp
+code_generator.o: code_generator.cpp headers/ph.hpp \
+  headers/code_generator.hpp
+compound_instruction.o: compound_instruction.cpp headers/ph.hpp \
+  headers/compound_instruction.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/instructions_list.hpp headers/syntax_tree_list.hpp \
+  headers/postcondition.hpp
+declaration.o: declaration.cpp headers/ph.hpp headers/declaration.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/types_controller.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp \
+  headers/postcondition.hpp headers/precondition.hpp \
+  headers/symbols_controller_factory.hpp headers/functions_controller.hpp \
+  headers/function_data.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/type_data.hpp
+dereference.o: dereference.cpp headers/ph.hpp headers/dereference.hpp \
+  headers/unit.hpp headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/code_generator.hpp headers/postcondition.hpp
+do_while_instruction.o: do_while_instruction.cpp headers/ph.hpp \
+  headers/do_while_instruction.hpp headers/instance_counter.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/postcondition.hpp
+equal_types_multimethod.o: equal_types_multimethod.cpp headers/ph.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp
+equal_types_nothrowable_dispatcher.o:  \
+ equal_types_nothrowable_dispatcher.cpp headers/ph.hpp
+errors_detector.o: errors_detector.cpp headers/ph.hpp \
+  headers/errors_detector.hpp headers/break_instruction.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/functions_controller.hpp \
+  headers/function_data.hpp headers/functions_list.hpp \
+  headers/syntax_tree_list.hpp headers/operators.hpp \
+  headers/types_mapping.hpp headers/scope.hpp \
+  headers/semantic_analysis_exceptions.hpp headers/types_controller.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp \
+  headers/precondition.hpp
+expression.o: expression.cpp headers/ph.hpp headers/expression.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/postcondition.hpp
+factor.o: factor.cpp headers/ph.hpp headers/factor.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/operators.hpp headers/types_mapping.hpp \
+  headers/postcondition.hpp
+for_instruction.o: for_instruction.cpp headers/ph.hpp \
+  headers/for_instruction.hpp headers/instance_counter.hpp \
+  headers/loop_instruction.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp
+function_call.o: function_call.cpp headers/ph.hpp \
+  headers/function_call.hpp headers/expressions_list.hpp \
+  headers/syntax_tree_list.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/functions_controller.hpp \
+  headers/function_data.hpp headers/unit.hpp headers/code_generator.hpp \
+  headers/postcondition.hpp
+function.o: function.cpp headers/ph.hpp headers/function.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/declaration.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/variables_controller.hpp \
+  headers/variable_data.hpp headers/functions_controller.hpp \
+  headers/function_data.hpp headers/parameters_list.hpp \
+  headers/syntax_tree_list.hpp headers/postcondition.hpp \
+  headers/symbols_controller_factory.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/types_controller.hpp \
+  headers/variables_controller.hpp headers/type_data.hpp \
+  headers/types_controller.hpp
+function_data.o: function_data.cpp headers/ph.hpp \
+  headers/function_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp headers/scope.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/type_data.hpp headers/symbol_data.hpp headers/postcondition.hpp
+get_address.o: get_address.cpp headers/ph.hpp headers/get_address.hpp \
+  headers/unit.hpp headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/code_generator.hpp headers/variable.hpp headers/unit.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp \
+  headers/postcondition.hpp
+if_instruction.o: if_instruction.cpp headers/ph.hpp \
+  headers/if_instruction.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/instance_counter.hpp headers/postcondition.hpp
+keywords_table.o: keywords_table.cpp headers/ph.hpp \
+  headers/keywords_table.hpp headers/semantic_value_stack.hpp \
+  headers/assignment_expression.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/break_instruction.hpp headers/compound_instruction.hpp \
+  headers/instructions_list.hpp headers/syntax_tree_list.hpp \
+  headers/continue_instruction.hpp headers/declaration.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp \
+  headers/dereference.hpp headers/unit.hpp headers/code_generator.hpp \
+  headers/do_while_instruction.hpp headers/instance_counter.hpp \
+  headers/expression.hpp headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/loop_instruction.hpp \
+  headers/function.hpp headers/declaration.hpp \
+  headers/functions_controller.hpp headers/function_data.hpp \
+  headers/parameters_list.hpp headers/function_call.hpp \
+  headers/expressions_list.hpp headers/functions_list.hpp \
+  headers/get_address.hpp headers/variable.hpp headers/if_instruction.hpp \
+  headers/instruction.hpp headers/instructions_list.hpp headers/null.hpp \
+  headers/number.hpp headers/parameter.hpp headers/parameters_list.hpp \
+  headers/parenthesis.hpp headers/program.hpp headers/functions_list.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/unary_factor.hpp headers/unit.hpp \
+  headers/variable.hpp headers/while_instruction.hpp headers/scanner.hpp \
+  headers/bison_parser.hpp headers/postcondition.hpp
+label_generator.o: label_generator.cpp headers/ph.hpp \
+  headers/label_generator.hpp
+number.o: number.cpp headers/ph.hpp headers/number.hpp headers/unit.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/code_generator.hpp
+operators.o: operators.cpp headers/ph.hpp headers/operators.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/types_mapping.hpp
+parameter.o: parameter.cpp headers/ph.hpp headers/parameter.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/types_controller.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp \
+  headers/declaration.hpp headers/postcondition.hpp \
+  headers/precondition.hpp headers/symbols_controller_factory.hpp \
+  headers/functions_controller.hpp headers/function_data.hpp \
+  headers/strings_controller.hpp headers/string_data.hpp \
+  headers/type_data.hpp
+parser.o: parser.cpp headers/ph.hpp headers/parser.hpp \
+  headers/semantic_value_stack.hpp headers/assignment_expression.hpp \
+  headers/instruction.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/break_instruction.hpp \
+  headers/compound_instruction.hpp headers/instructions_list.hpp \
+  headers/syntax_tree_list.hpp headers/continue_instruction.hpp \
+  headers/declaration.hpp headers/variables_controller.hpp \
+  headers/variable_data.hpp headers/dereference.hpp headers/unit.hpp \
+  headers/code_generator.hpp headers/do_while_instruction.hpp \
+  headers/instance_counter.hpp headers/expression.hpp \
+  headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/loop_instruction.hpp \
+  headers/function.hpp headers/functions_controller.hpp \
+  headers/function_data.hpp headers/parameters_list.hpp \
+  headers/function_call.hpp headers/functions_list.hpp \
+  headers/get_address.hpp headers/variable.hpp headers/if_instruction.hpp \
+  headers/null.hpp headers/number.hpp headers/parameter.hpp \
+  headers/parenthesis.hpp headers/program.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/unary_factor.hpp \
+  headers/while_instruction.hpp headers/scanner.hpp \
+  headers/bison_parser.hpp
+parenthesis.o: parenthesis.cpp headers/ph.hpp headers/parenthesis.hpp \
+  headers/unit.hpp headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/code_generator.hpp headers/postcondition.hpp
+program.o: program.cpp headers/ph.hpp headers/program.hpp \
+  headers/functions_list.hpp headers/syntax_tree_list.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp
+return_instruction.o: return_instruction.cpp headers/ph.hpp \
+  headers/return_instruction.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp
+scanner.o: scanner.cpp headers/ph.hpp headers/semantic_value_stack.hpp \
+  headers/assignment_expression.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/break_instruction.hpp headers/compound_instruction.hpp \
+  headers/instructions_list.hpp headers/syntax_tree_list.hpp \
+  headers/continue_instruction.hpp headers/declaration.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp \
+  headers/dereference.hpp headers/unit.hpp headers/code_generator.hpp \
+  headers/do_while_instruction.hpp headers/instance_counter.hpp \
+  headers/expression.hpp headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/loop_instruction.hpp \
+  headers/function.hpp headers/declaration.hpp \
+  headers/functions_controller.hpp headers/function_data.hpp \
+  headers/parameters_list.hpp headers/function_call.hpp \
+  headers/expressions_list.hpp headers/functions_list.hpp \
+  headers/get_address.hpp headers/variable.hpp headers/if_instruction.hpp \
+  headers/instruction.hpp headers/instructions_list.hpp headers/null.hpp \
+  headers/number.hpp headers/parameter.hpp headers/parameters_list.hpp \
+  headers/parenthesis.hpp headers/program.hpp headers/functions_list.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/unary_factor.hpp headers/unit.hpp \
+  headers/variable.hpp headers/while_instruction.hpp \
+  headers/bison_parser.hpp headers/keywords_table.hpp
+scope.o: scope.cpp headers/ph.hpp headers/scope.hpp
+semantic_analysis_exceptions.o: semantic_analysis_exceptions.cpp \
+  headers/ph.hpp headers/semantic_analysis_exceptions.hpp \
+  headers/break_instruction.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp
+semantic_analysis_visitor.o: semantic_analysis_visitor.cpp headers/ph.hpp \
+  headers/semantic_analysis_visitor.hpp headers/functions_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/function_data.hpp \
+  headers/symbol_data.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/type_data.hpp \
+  headers/strings_controller.hpp headers/string_data.hpp \
+  headers/types_controller.hpp headers/variables_controller.hpp \
+  headers/variable_data.hpp headers/errors_detector.hpp \
+  headers/break_instruction.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/functions_controller.hpp \
+  headers/functions_list.hpp headers/syntax_tree_list.hpp \
+  headers/operators.hpp headers/types_mapping.hpp \
+  headers/semantic_analysis_exceptions.hpp \
+  headers/variables_controller.hpp headers/scope.hpp \
+  headers/assignment_expression.hpp headers/break_instruction.hpp \
+  headers/compound_instruction.hpp headers/instructions_list.hpp \
+  headers/continue_instruction.hpp headers/declaration.hpp \
+  headers/dereference.hpp headers/unit.hpp headers/code_generator.hpp \
+  headers/do_while_instruction.hpp headers/instance_counter.hpp \
+  headers/expression.hpp headers/expressions_list.hpp headers/factor.hpp \
+  headers/for_instruction.hpp headers/loop_instruction.hpp \
+  headers/function.hpp headers/declaration.hpp \
+  headers/parameters_list.hpp headers/function_call.hpp \
+  headers/expressions_list.hpp headers/functions_list.hpp \
+  headers/get_address.hpp headers/variable.hpp headers/if_instruction.hpp \
+  headers/instructions_list.hpp headers/null.hpp headers/number.hpp \
+  headers/parameter.hpp headers/parameters_list.hpp \
+  headers/parenthesis.hpp headers/program.hpp \
+  headers/return_instruction.hpp headers/simple_expression.hpp \
+  headers/string.hpp headers/strings_controller.hpp headers/type.hpp \
+  headers/unary_factor.hpp headers/unit.hpp headers/variable.hpp \
+  headers/while_instruction.hpp headers/semantic_analysis_exceptions.hpp \
+  headers/types_mapping.hpp
+simple_expression.o: simple_expression.cpp headers/ph.hpp \
+  headers/simple_expression.hpp headers/syntax_tree_node.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/scope.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/postcondition.hpp
+string.o: string.cpp headers/ph.hpp headers/string.hpp headers/unit.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/code_generator.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/postcondition.hpp
+string_data.o: string_data.cpp headers/ph.hpp headers/string_data.hpp \
+  headers/symbol_data.hpp headers/postcondition.hpp headers/scope.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/type_data.hpp headers/symbol_data.hpp headers/postcondition.hpp \
+  headers/symbols_controller_factory.hpp headers/functions_controller.hpp \
+  headers/function_data.hpp headers/types_controller.hpp \
+  headers/strings_controller.hpp headers/string_data.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp \
+  headers/type_data.hpp
+strings_controller.o: strings_controller.cpp headers/ph.hpp \
+  headers/strings_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/string_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/type_data.hpp \
+  headers/code_generator.hpp
+symbol_data.o: symbol_data.cpp headers/ph.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp headers/scope.hpp headers/postcondition.hpp
+symbols_controller_factory.o: symbols_controller_factory.cpp \
+  headers/ph.hpp headers/symbols_controller_factory.hpp \
+  headers/functions_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/function_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/type_data.hpp headers/strings_controller.hpp \
+  headers/string_data.hpp headers/types_controller.hpp \
+  headers/variables_controller.hpp headers/variable_data.hpp \
+  headers/postcondition.hpp
+type.o: type.cpp headers/ph.hpp headers/type.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp
+type_data.o: type_data.cpp headers/ph.hpp headers/type_data.hpp \
+  headers/symbol_data.hpp headers/postcondition.hpp headers/scope.hpp \
+  headers/type.hpp headers/postcondition.hpp
+types_mapping.o: types_mapping.cpp headers/ph.hpp \
+  headers/types_mapping.hpp headers/equal_types_multimethod.hpp \
+  headers/type.hpp headers/equal_types_nothrowable_dispatcher.hpp \
+  headers/precondition.hpp headers/type.hpp
+unary_factor.o: unary_factor.cpp headers/ph.hpp headers/unary_factor.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/operators.hpp headers/types_mapping.hpp \
+  headers/postcondition.hpp
+variable.o: variable.cpp headers/ph.hpp headers/variable.hpp \
+  headers/unit.hpp headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/code_generator.hpp headers/variables_controller.hpp \
+  headers/variable_data.hpp headers/postcondition.hpp
+variable_data.o: variable_data.cpp headers/ph.hpp \
+  headers/variable_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp headers/scope.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/type_data.hpp headers/symbol_data.hpp \
+  headers/types_controller.hpp headers/postcondition.hpp \
+  headers/precondition.hpp
+variables_controller.o: variables_controller.cpp headers/ph.hpp \
+  headers/variables_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/variable_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp \
+  headers/symbols_table.hpp headers/type_data.hpp \
+  headers/postcondition.hpp headers/types_controller.hpp
+while_instruction.o: while_instruction.cpp headers/ph.hpp \
+  headers/while_instruction.hpp headers/instance_counter.hpp \
+  headers/loop_instruction.hpp headers/instruction.hpp \
+  headers/syntax_tree_node.hpp headers/postcondition.hpp \
+  headers/types_controller.hpp headers/symbols_table.hpp \
+  headers/equal_types_multimethod.hpp headers/type.hpp \
+  headers/equal_types_nothrowable_dispatcher.hpp headers/precondition.hpp \
+  headers/scope.hpp headers/type_data.hpp headers/symbol_data.hpp \
+  headers/postcondition.hpp

@@ -1,0 +1,10 @@
+int return_value( int i ){ return i;}
+
+int add_values( int i1, int i2 ){ return i1 + i2; }
+
+int main(){
+    if( return_value( 1 + 2 * 3 ) != 7 ) return 1;
+    if( add_values( return_value( 4 * 5 ), return_value( 4 - 5 ) ) != 19 ) return 2;
+
+    return 0;
+}
