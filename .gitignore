@@ -1,0 +1,6 @@
+*.o
+bison_parser.cpp
+scanner.cpp
+bison_parser.output
+mtc
+
