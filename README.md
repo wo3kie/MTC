@@ -29,6 +29,7 @@ GitHub source code  : https://github.com/wo3kie/MTC
 ## How to write your own program
 Please follow examples in 'tests' directory. Shortly speaking mtc supports C syntax with no structs.
 
+```
 tests/factorial.mtc
   1 int factorial_recursive( int _value ){
   2     if( _value == 0 ) return 1;
@@ -49,7 +50,9 @@ tests/factorial.mtc
  17     return factorial_recursive( 4 ) - factorial_for( 4 );
  18 }
 ~
+```
 
+```
 tests/function_arguments_2.mtc
   1 int * Pint_F_Pint( int * p ){
   2     return p;
@@ -80,4 +83,6 @@ tests/function_arguments_2.mtc
  27 
  28     return 0;
  29 }
-~           
+~  
+```
+
