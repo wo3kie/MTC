@@ -2,21 +2,21 @@ int main(){
     int i1 = 3;
     int * p1 = & i1;
 
-if( * p1 != i1 ) return 1;
-if( * p1 != 3 ) return 2; 
+    if( * p1 != i1 ) return 1;
+    if( * p1 != 3 ) return 2;
 
     int i2 = 4;
     p1 = & i2;
 
-if( * p1 == i1 ) return 3;
-if( 3 == * p1 ) return 4;
-if( * p1 != i2 ) return 5;
-if( 4 != * p1 ) return 6;
+    if( * p1 == i1 ) return 3;
+    if( 3 == * p1 ) return 4;
+    if( * p1 != i2 ) return 5;
+    if( 4 != * p1 ) return 6;
 
     int * p2 = & i2;
     
-if( * p1 != * p2 ) return 7;
-if( * p2 != i2 ) return 8;
+    if( * p1 != * p2 ) return 7;
+    if( * p2 != i2 ) return 8;
 
     return 0;
 }

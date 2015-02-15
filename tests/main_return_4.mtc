@@ -1,4 +1,6 @@
-int return_value( int i ){ return i; }
+int return_value( int i ){
+    return i;
+}
 
 int main(){
     if( 1 == 2 ){

@@ -14,16 +14,16 @@ int main(){
     int i1 = 3;
     int * p1 = & i1;
 
-if( Pint_F_Pint( & i1 ) != & i1 ) return 1;
-if( Pint_F_Pint( p1 ) != p1 ) return 2;
+    if( Pint_F_Pint( & i1 ) != & i1 ) return 1;
+    if( Pint_F_Pint( p1 ) != p1 ) return 2;
 
-if( int_F_Pint( & i1 ) != i1 ) return 3;
-if( int_F_Pint( p1 ) != i1 ) return 4;
-if( int_F_Pint( Pint_F_Pint( & i1 ) ) != i1 ) return 5;
-if( int_F_Pint( Pint_F_Pint( p1 ) ) != i1 ) return 6;
+    if( int_F_Pint( & i1 ) != i1 ) return 3;
+    if( int_F_Pint( p1 ) != i1 ) return 4;
+    if( int_F_Pint( Pint_F_Pint( & i1 ) ) != i1 ) return 5;
+    if( int_F_Pint( Pint_F_Pint( p1 ) ) != i1 ) return 6;
 
-if( int_F_int_Pint( 3, p1 ) != 6 ) return 7;
-if( int_F_int_Pint( int_F_Pint( p1 ), & i1 ) != 6 ) return 8;
+    if( int_F_int_Pint( 3, p1 ) != 6 ) return 7;
+    if( int_F_int_Pint( int_F_Pint( p1 ), & i1 ) != 6 ) return 8;
 
     return 0;
 }

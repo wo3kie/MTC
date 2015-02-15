@@ -38,9 +38,9 @@ int for_continue( int omit, int end ){
 int main(){
     int i = 10;
 
-if( simple_for( 10 ) != 145 ) return 1;
-if( breaked_for( i ) != i ) return 2;
-if( for_continue( 3, 5 ) != 7 ) return 3; 
+    if( simple_for( 10 ) != 145 ) return 1;
+    if( breaked_for( i ) != i ) return 2;
+    if( for_continue( 3, 5 ) != 7 ) return 3;
 
     return 0;
 }

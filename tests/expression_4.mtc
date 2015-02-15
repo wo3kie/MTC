@@ -1,6 +1,10 @@
-int return_value( int i ){ return i;}
+int return_value( int i ){
+    return i;
+}
 
-int add_values( int i1, int i2 ){ return i1 + i2; }
+int add_values( int i1, int i2 ){
+    return i1 + i2;
+}
 
 int main(){
     if( return_value( 1 + 2 * 3 ) != 7 ) return 1;

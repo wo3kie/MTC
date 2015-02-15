@@ -2,15 +2,15 @@ int main(){
     int i1 = 3;
     int * p1 = & i1;
 
-if( p1 != & i1 ) return 1;
+    if( p1 != & i1 ) return 1;
 
     int * p2 = null;
     
-if( p2 != null ) return 2;
+    if( p2 != null ) return 2;
 
     p2 = & i1;
 
-if( p1 != p2 ) return 3;    
+    if( p1 != p2 ) return 3;
 
     return 0;
 }
