@@ -44,7 +44,7 @@ KeywordTableSingleton::KeywordTableSingleton()
 #ifdef __EEGGS__    
     m_keywordsTable[ "empty" ] = BisonParser::NULL_UNIT;
     m_keywordsTable[ "repeat" ] = BisonParser::FOR;
-    m_keywordsTable[ "result" ] = BisonParser::RETURN;
+    //m_keywordsTable[ "result" ] = BisonParser::RETURN;
     m_keywordsTable[ "skip" ] = BisonParser::CONTINUE;
 #endif
 }

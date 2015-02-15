@@ -1,5 +1,5 @@
 # CXX
-CXX= g++
+CXX= clang++
 
 INC= -I. -I./loki/include
 
@@ -99,8 +99,10 @@ depend:
 
 clean:
 	rm -f $(OBJS) $(PROG)
+
+clean_all:
+	rm -f $(OBJS) $(PROG)
 	rm -f $(PARSER_SOURCE_CODE_FILE) $(LEXER_SOURCE_CODE_FILE) $(PARSER_SOURCE_CODE_FILE:.cpp=.output)
-	rm -rf *~
 
 run_tests:
 	./start_tests.sh
