@@ -13,13 +13,13 @@ GitHub source code  : https://github.com/wo3kie/MTC
   
 ## Requirements
 * C++03
-* flex++
-* bison++
-* loki library (http://loki-lib.sourceforge.net/) (included as part of my code in version 0.1.7)
+* flex++, optional, only if you change scanner.l, tested with flex++ 2.5.35
+* bison++, optional, only if you change bison_parser.y, tested with bison++ 1.21.9-1
+* loki library, included as part of my code in version 0.1.7 (http://loki-lib.sourceforge.net/)
   
   
 ## How to build code?
-* make all
+* make
 
 
 ## How to run a code?
