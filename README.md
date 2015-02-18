@@ -30,59 +30,59 @@ GitHub source code  : https://github.com/wo3kie/MTC
 Please follow examples in 'tests' directory. Shortly speaking mtc supports C syntax with no structs.
 
 ```
-tests/factorial.mtc
-  1 int factorial_recursive( int _value ){
-  2     if( _value == 0 ) return 1;
-  3     else return _value * factorial_recursive( _value - 1 );
-  4 }
-  5 
-  6 int factorial_for( int _value ){
-  7     int result = 1;
-  8 
-  9     for( int start = 1 ; start < _value + 1; start = start + 1 ){
- 10         result = result * start;
- 11     }
- 12 
- 13     return result;
- 14 }
- 15 
- 16 int main(){
- 17     return factorial_recursive( 4 ) - factorial_for( 4 );
- 18 }
-~
+// tests/factorial.mtc
+
+int factorial_recursive( int _value ){
+    if( _value == 0 ) return 1;
+    else return _value * factorial_recursive( _value - 1 );
+}
+
+int factorial_for( int _value ){
+    int result = 1;
+
+    for( int start = 1 ; start < _value + 1; start = start + 1 ){
+        result = result * start;
+    }
+
+    return result;
+}
+
+int main(){
+    return factorial_recursive( 4 ) - factorial_for( 4 );
+}
 ```
 
 ```
-tests/function_arguments_2.mtc
-  1 int * Pint_F_Pint( int * p ){
-  2     return p;
-  3 }
-  4 
-  5 int int_F_Pint( int * p ){
-  6     return * p;
-  7 }
-  8 
-  9 int int_F_int_Pint( int i, int * p ){
- 10     return i + * p;
- 11 }
- 12 
- 13 int main(){
- 14     int i1 = 3;
- 15     int * p1 = & i1;
- 16 
- 17     if( Pint_F_Pint( & i1 ) != & i1 ) return 1;
- 18     if( Pint_F_Pint( p1 ) != p1 ) return 2;
- 19 
- 20     if( int_F_Pint( & i1 ) != i1 ) return 3;
- 21     if( int_F_Pint( p1 ) != i1 ) return 4;
- 22     if( int_F_Pint( Pint_F_Pint( & i1 ) ) != i1 ) return 5;
- 23     if( int_F_Pint( Pint_F_Pint( p1 ) ) != i1 ) return 6;
- 24 
- 25     if( int_F_int_Pint( 3, p1 ) != 6 ) return 7;
- 26     if( int_F_int_Pint( int_F_Pint( p1 ), & i1 ) != 6 ) return 8;
- 27 
- 28     return 0;
- 29 }
-~  
+// tests/function_arguments_2.mtc
+
+int * Pint_F_Pint( int * p ){
+    return p;
+}
+
+int int_F_Pint( int * p ){
+    return * p;
+}
+
+int int_F_int_Pint( int i, int * p ){
+    return i + * p;
+}
+
+int main(){
+    int i1 = 3;
+    int * p1 = & i1;
+
+    if( Pint_F_Pint( & i1 ) != & i1 ) return 1;
+    if( Pint_F_Pint( p1 ) != p1 ) return 2;
+
+    if( int_F_Pint( & i1 ) != i1 ) return 3;
+    if( int_F_Pint( p1 ) != i1 ) return 4;
+    if( int_F_Pint( Pint_F_Pint( & i1 ) ) != i1 ) return 5;
+    if( int_F_Pint( Pint_F_Pint( p1 ) ) != i1 ) return 6;
+
+    if( int_F_int_Pint( 3, p1 ) != 6 ) return 7;
+    if( int_F_int_Pint( int_F_Pint( p1 ), & i1 ) != 6 ) return 8;
+
+    return 0;
+}
 ```
 
