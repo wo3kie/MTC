@@ -1,33 +1,25 @@
-# MTC
+## Copyright (C) 2007 Łukasz Czerwiński
 
 ## Master Thesis Compiler
-My master thesis `Syntax, semantics analysis methods and assembly code generating for Intel x86 architecture' describes lexical analysis, parsing theory, semantic analysis focused on types and classes and computer's architecture basics. A compiler was done as a practical part of it.
+This project it a practical part of my master thesis `Syntax, semantics analysis methods and assembly code generating for Intel x86 architecture' describes lexical analysis, parsing theory, semantic analysis focused on types and classes and computer's architecture basics. It contains a source code of a compiler for a simplified version of C language.
 
+## Website
+https://github.com/wo3kie/mtc
 
-## Copyright (C) 2007 Lukasz Czerwinski
-
-
-## Most important links:
-GitHub source code  : https://github.com/wo3kie/MTC
-
-  
 ## Requirements
 * C++03
-* flex++, optional, only if you change scanner.l, tested with flex++ 2.5.35
-* bison++, optional, only if you change bison_parser.y, tested with bison++ 1.21.9-1
-* loki library, included as part of my code in version 0.1.7 (http://loki-lib.sourceforge.net/)
-  
+* flex++ >=2.5.35, optional, only if you change scanner.l
+* bison++ >= 1.21.9-1, optional, only if you change bison_parser.y
+* loki library, included as part of my code in version 0.1.7 [link](http://loki-lib.sourceforge.net/)
   
 ## How to build code?
-* make
+make
 
-
-## How to run a code?
+## How to run it?
 ./mtc.sh tests/expression_1.mtc
 
-
 ## How to write your own program
-Please follow examples in 'tests' directory. Shortly speaking mtc supports C syntax with no structs.
+Please follow examples in 'tests' directory. Shortly speaking mtc has C like syntax with no struct support.
 
 ```
 // tests/factorial.mtc
