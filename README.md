@@ -24,15 +24,15 @@ Please follow examples in 'tests' directory. Shortly speaking mtc has C like syn
 ```{r, engine='cpp'}  
 tests/factorial.mtc
 
-int factorial_recursive( int \_value ){
-    if( \_value == 0 ) return 1;
-    else return \_value * factorial_recursive( \_value - 1 );
+int factorial_recursive( int value ){
+    if( value == 0 ) return 1;
+    else return value * factorial_recursive( value - 1 );
 }
 
-int factorial_for( int \_value ){
+int factorial_for( int value ){
     int result = 1;
 
-    for( int start = 1 ; start < \_value + 1; start = start + 1 ){
+    for( int start = 1 ; start < value + 1; start = start + 1 ){
         result = result * start;
     }
 
