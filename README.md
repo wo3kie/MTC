@@ -21,18 +21,18 @@ make
 ## How to write your own program
 Please follow examples in 'tests' directory. Shortly speaking mtc has C like syntax with no struct support.
   
-```{r, engine='cpp'}
-// tests/factorial.mtc
+```{r, engine='cpp'}  
+tests/factorial.mtc
 
-int factorial_recursive( int _value ){
-    if( _value == 0 ) return 1;
-    else return _value * factorial_recursive( _value - 1 );
+int factorial_recursive( int \_value ){
+    if( \_value == 0 ) return 1;
+    else return \_value * factorial_recursive( \_value - 1 );
 }
 
-int factorial_for( int _value ){
+int factorial_for( int \_value ){
     int result = 1;
 
-    for( int start = 1 ; start < _value + 1; start = start + 1 ){
+    for( int start = 1 ; start < \_value + 1; start = start + 1 ){
         result = result * start;
     }
 
@@ -44,7 +44,7 @@ int main(){
 }
 ```
 
-```
+```{r, engine='cpp'}  
 // tests/function_arguments_2.mtc
 
 int * Pint_F_Pint( int * p ){
