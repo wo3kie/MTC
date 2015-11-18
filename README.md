@@ -20,8 +20,8 @@ make
 
 ## How to write your own program
 Please follow examples in 'tests' directory. Shortly speaking mtc has C like syntax with no struct support.
-
-```
+  
+```{r, engine='cpp'}
 // tests/factorial.mtc
 
 int factorial_recursive( int _value ){
